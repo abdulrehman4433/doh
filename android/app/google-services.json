@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "736911154434",
+    "firebase_url": "https://dump0health.firebaseio.com",
+    "project_id": "dump0health",
+    "storage_bucket": "dump0health.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736911154434:android:7f4efa39894ff77d5ff61b",
+        "android_client_info": {
+          "package_name": "dumpohealth.doh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736911154434-7dq6ijbr1movpb625l6j7708dmg7omsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC21iVN2LAUOefjCqMu4pISbuXcvsmRcHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736911154434-7dq6ijbr1movpb625l6j7708dmg7omsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
