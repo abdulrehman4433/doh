@@ -7,7 +7,7 @@ class Choose extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('DUMPOHEALTH',
+        title: Text('DUMAPOHEALTH',
           style:TextStyle(
             fontFamily: 'Philosopher',
             fontWeight: FontWeight.w700,

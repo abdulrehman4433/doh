@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'DUMPOHEALTH',
+        title: 'DUMAPOHEALTH',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           fontFamily: 'Philosopher',

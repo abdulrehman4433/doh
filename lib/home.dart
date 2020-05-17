@@ -1,7 +1,5 @@
-import 'dart:developer';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'widgets/nav-drawer.dart';
 
 class HomePage extends StatefulWidget {
@@ -65,7 +63,7 @@ class _HomePageState extends State<HomePage> {
        drawer: NavDrawer(),
       appBar: AppBar(
        centerTitle: true,
-       title: Text('DUMPOHEALTH',
+       title: Text('DUMAPOHEALTH',
          style:TextStyle(
            fontFamily: 'Philosopher',
            fontWeight: FontWeight.w700,

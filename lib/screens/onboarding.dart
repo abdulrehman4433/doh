@@ -32,7 +32,7 @@ class _OnboardingPageState extends State<Onboarding> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'DUMPOHEALTH',
+          'DUMAPOHEALTH',
           style: TextStyle(
             fontFamily: 'Philosopher',
             fontWeight: FontWeight.w700,
@@ -63,7 +63,7 @@ class _OnboardingPageState extends State<Onboarding> {
                   'I invite you to try our service and I personally guarantee you will have a fully satisfied experience.'),
               _buildPageContent(
                   image: 'assets/images/onboarding3.png',
-                  title: 'To your health care practtitioner.',
+                  title: 'To your health care practitioner.',
                   body:
                   'By offering exceptional service with no detail unattended, you can meet your at doctor at given time.')
             ],

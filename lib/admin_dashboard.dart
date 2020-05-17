@@ -38,7 +38,7 @@ class _Admindashboard extends State<AdminDashboard>{
         child: Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            title: Text('DUMPOHEALTH',
+            title: Text('DUMAPOHEALTH',
               style:TextStyle(
                 fontFamily: 'Philosopher',
                 fontWeight: FontWeight.w700,

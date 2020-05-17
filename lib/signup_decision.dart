@@ -9,7 +9,7 @@ class Decision extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: Text(
-            'DUMPOHEALTH',
+            'DUMAPOHEALTH',
             style: TextStyle(
               fontFamily: 'Philosopher',
               fontWeight: FontWeight.w700,

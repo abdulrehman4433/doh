@@ -21,8 +21,8 @@ class _DriverRegister extends State<DriverRegister> {
   TextEditingController confirmPwdInputController;
 
 
-  List<String> _locations = ['Sedans', 'SUVs', 'Minivans', 'Wheelchair Accessible Vehicles']; // Option 2
-  String _selectedLocation; // Option
+  final listOfVehicle = ['Sedans', 'SUVs', 'Minivans', 'Wheelchair Accessible Vehicles']; // Option 2
+  String dropdownValue = 'Sedans'; // Option
   @override
   initState() {
     super.initState();
@@ -124,19 +124,27 @@ class _DriverRegister extends State<DriverRegister> {
                             border: new OutlineInputBorder(),
                           ),
                           isDense: true,
-                          // Not necessary for Option 1
-                          value: _selectedLocation,
-                          onChanged: (newValue) {
-                            setState(() {
-                              _selectedLocation = newValue;
-                            });
-                          },
-                          items: _locations.map((location) {
-                            return DropdownMenuItem(
-                              child: new Text(location),
-                              value: location,
+                          value: dropdownValue,
+                          icon: Icon(Icons.arrow_downward),
+
+                          items: listOfVehicle.map((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: new Text(value),
                             );
                           }).toList(),
+
+                          onChanged: (String newValue) {
+                            setState(() {
+                              dropdownValue = newValue;
+                            });
+                          },
+                          validator: (value) {
+                            if (value.isEmpty) {
+                              return 'Please Select Vehicle';
+                            }
+                            return null;
+                          },
                         ),
                       ),
                       SizedBox(
@@ -202,13 +210,9 @@ class _DriverRegister extends State<DriverRegister> {
                                 "phoneno": phonenoInputController.text,
                                 "licenseno": licensenoInputController.text,
                                 "vehicleno": vehiclenoInputController.text,
-                                "vehicletype": vehicletypeInputController.text,
+                                "vehicletype": dropdownValue,
                                 "email": emailInputController.text,
-                              })
-                                  .then((result) => {
-                                Container(
-                                  child: CircularProgressIndicator(),
-                                ),
+                              }).then((result) => {
                                 Navigator.pushAndRemoveUntil(
                                     context,
                                     MaterialPageRoute(

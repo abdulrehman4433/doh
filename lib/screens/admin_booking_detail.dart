@@ -17,7 +17,7 @@ class _SettingsState extends State<AdminBookingDetail> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'DUMPOHEALTH',
+          'DUMAPOHEALTH',
           style: TextStyle(
             fontFamily: 'Philosopher',
             fontWeight: FontWeight.w700,
