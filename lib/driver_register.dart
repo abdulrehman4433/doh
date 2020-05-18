@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
 import 'home.dart';
 
 class DriverRegister extends StatefulWidget {
@@ -70,8 +71,11 @@ class _DriverRegister extends State<DriverRegister> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      TextFormField(
-                        decoration: InputDecoration(
+                  SizedBox(
+                    height: 10,
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(
                           labelText: 'Full Name*', hintText: "John",
                           border: new OutlineInputBorder(),),
                         controller: fullNameInputController,

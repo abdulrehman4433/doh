@@ -1,8 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'home.dart';
 
 class LoginPage extends StatefulWidget {
@@ -78,9 +78,12 @@ class _LoginPageState extends State<LoginPage> {
                   key: _loginFormKey,
                   child: Column(
                     children: <Widget>[
-                      TextFormField(
-                        decoration: InputDecoration(
-                            labelText: 'Email*', hintText: "john.doe@gmail.com",
+                  SizedBox(
+                    height: 10,
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(
+                          labelText: 'Email*', hintText: "john.doe@gmail.com",
                           border: new OutlineInputBorder(),),
                         controller: emailInputController,
                         keyboardType: TextInputType.emailAddress,
@@ -91,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       TextFormField(
                         decoration: InputDecoration(
-                            labelText: 'Password*', hintText: "********",
+                          labelText: 'Password*', hintText: "********",
                           border: new OutlineInputBorder(),),
                         controller: pwdInputController,
                         obscureText: true,

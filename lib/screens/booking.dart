@@ -1,15 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
-import 'package:intl/intl.dart';
-import 'package:google_maps_place_picker/google_maps_place_picker.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:google_maps_webservice/places.dart';
+import 'package:google_maps_place_picker/google_maps_place_picker.dart';
+import 'package:intl/intl.dart';
 
 // ...
 const String kGoogleApiKey = 'AIzaSyACitlfFOAbo-nnoakhfcZcfqcoV7N-Fq4';
-GoogleMapsPlaces _places = GoogleMapsPlaces(apiKey: kGoogleApiKey);
 
 class BasicDateField extends StatefulWidget {
   const BasicDateField({Key key}) : super(key: key);
