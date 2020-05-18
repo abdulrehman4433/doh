@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>469515982760-3pvtan1i72u7lur4qkv432ui6thbfh5v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.469515982760-3pvtan1i72u7lur4qkv432ui6thbfh5v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBSNmmszzC4qOcr6IpwzJIkgr7lTgfNwlw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>469515982760</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dumpohealth.doh</string>
+	<key>PROJECT_ID</key>
+	<string>dohforios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dohforios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:469515982760:ios:d8bc2726e9562aa2322f9d</string>
+	<key>DATABASE_URL</key>
+	<string>https://dohforios.firebaseio.com</string>
+</dict>
+</plist>
